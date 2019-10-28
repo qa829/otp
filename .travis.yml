@@ -1,5 +1,3 @@
-arch: s390x
-
 language: c
 
 sudo: false
@@ -52,7 +50,10 @@ matrix:
         - ./scripts/run-smoke-tests
 
     - env: Linux-ppc64le-SmokeTest
-      os: linux-ppc64le
+      #os: linux-ppc64le
+      arch: 
+      - ppc64le
+      - s390x
       script:
         - ./scripts/build-otp
         - ./otp_build tests
