@@ -1,3 +1,5 @@
+arch: s390x
+
 language: c
 
 sudo: false
